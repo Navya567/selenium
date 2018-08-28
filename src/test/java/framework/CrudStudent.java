@@ -17,18 +17,6 @@ import org.testng.annotations.Test;
 public class CrudStudent extends DriverFactory {
 	
 	WebDriver driver;
-	System.setProperty("webdriver.chrome.driver",
-        "C:\Users\Navya Sree Areti#\Downloads\selenium-sauce-master\src\test\resources\selenium_standalone_binaries\linux\googlechrome\64bit");
-        ChromeProfile profile = new ChromeProfile();
-        profile.preferences().set("User Prefs", "Ignore Unrequested Popups", false);
-
-        DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        capabilities.setCapability("chrome.profile", profile);           
-        capabilities.setCapability("chrome.binary",
-        "C:\Users\Navya Sree Areti#\Downloads\selenium-sauce-master\src\test\resources\selenium_standalone_binaries\linux\googlechrome\64bit");
-
-         driver = new ChromeDriver(capabilities);
-	
 	
 	@BeforeTest
 	public void beforeTest() throws Exception{
