@@ -15,6 +15,7 @@ import org.testng.annotations.Test;
 
 
 public class CrudStudent extends DriverFactory {
+	System.setProperty("webdriver.chrome.driver","<YourPath>chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	
 	
