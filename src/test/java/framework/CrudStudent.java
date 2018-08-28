@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 
 public class CrudStudent extends DriverFactory {
-	WebDriver driver;
+	WebDriver driver = new ChromeDriver();
 	
 	
 	@BeforeTest
