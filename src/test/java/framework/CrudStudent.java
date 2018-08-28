@@ -23,7 +23,7 @@ public class CrudStudent extends DriverFactory {
 	public void beforeTest() throws Exception{
 	
 		
-		driver=DriverFactory.getDriver("http://www.google.com");
+		driver=DriverFactory.getDriver();
 		driver.manage().window().maximize();
 		driver.get("http://IPADDRESS/student/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
